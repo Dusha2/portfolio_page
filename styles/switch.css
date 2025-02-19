@@ -1,0 +1,40 @@
+.switch-style {
+    position: fixed;
+    right: 20px;
+    top: 95%;
+    transform: translateY(-95%);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    
+    background-color: var(--co-dark-blue-text);
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.switch-style:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+    opacity: .9;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.switch-icon {
+    width: 30px;
+    height: 30px;
+    fill: var(--co-white-bg);
+}

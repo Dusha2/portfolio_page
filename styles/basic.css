@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Heebo", serif;
+    background-color: var(--co-white-bg);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+button,
+input,
+textarea {
+    text-decoration: none;
+    color: unset;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

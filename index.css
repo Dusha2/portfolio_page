@@ -1,0 +1,12 @@
+@import url(./styles/variables.css);
+@import url(./styles/basic.css);
+@import url(./styles/blocks/header.css);
+@import url(./styles/blocks/hero.css);
+@import url(./styles/blocks/recent-posts.css);
+@import url(./styles/blocks/project.css);
+@import url(./styles/blocks/socials.css);
+@import url(./styles/blocks/blog.css);
+@import url(./styles/blocks/contacts.css);
+@import url(./styles/blocks/contact-us.css);
+@import url(./styles/mob-menu.css);
+@import url(./styles/switch.css);

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Basic SEO Meta Tags -->
+    <meta name="author" content="Roman Dushyn" />
+    <meta name="description"
+        content="Personal portfolio of Roman Dushyn, showcasing projects, blog posts, and contact details." />
+    <meta name="keywords" content="portfolio, web development, UX/UI design, projects, Roman Dushyn" />
+    
+    <!-- Adaptability  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png">
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="switch-style" aria-label="light switch">
+        <span class="button">
+            <svg class="switch-icon" aria-label="light switch button">
+                <use href="assets/sprites.svg#switch-icon"></use>
+            </svg>
+        </span>
+    </div>
+
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="logo website">
+                        <svg>
+                            <use href="assets/sprites.svg#logo-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <nav class="header__nav" aria-label="navigation">
+                    <ul class="header__nav-list" aria-label="navigation__list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="blog.html" class="header__nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html" class="header__nav-link nav-link-active">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="menu-toggler-id" aria-label="open-colse mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" name="toggler" id="menu-toggler-id" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+            <ul class="mobile-navigation__list" aria-label="mobile navigation list">
+                <li class="mobile-navigation__item">
+                    <a href="index.html" class="mobile-navigation__link">
+                        Projects
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="blog.html" class="mobile-navigation__link">
+                        Blog
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="contact.html" class="mobile-navigation__link nav-link-active">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+
+            <label for="menu-toggler-id" class="mobile-navigation__close"
+                aria-label="close-colse mobile navigation menu">
+                <svg class="mobile-navigation__cross" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+    <main>
+        <section class="contacts" aria-label="contacts section">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <h1 class="contacts__title">Contacts</h1>
+                    <div class="contact__container">
+                        <div class="contact__block">
+                            <h2 class="contact__title">Location</h2>
+                            <div class="contact__info">
+                                <a href="https://maps.app.goo.gl/woBfJQ8NTaGqQqmE9" target="_blank" class="contact__info">Kyiv, Ukraine</a>
+                            </div>
+                        </div>
+                        <div class="contact__block">
+                            <h2 class="contact__title">Telegram / WhatsApp</h2>
+                            <div class="contact__info">
+                                <a href="tel:+380427779533">+38 (042) 777-95-33</a>
+                            </div>
+                        </div>
+                        <div class="contact__block">
+                            <h2 class="contact__title">Email</h2>
+                            <div class="contact__info">
+                                <a class="contact__info-gmail" href="mailto:webdev@protonmail.com" target="_blank"
+                                    rel="noopener noreferrer">kolobok@gggmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us" aria-label="contact-us section">
+            <div class="container">
+                <div class="contact-us__wrapper">
+                    <div class="contact-us__head">
+                        <h2 class="contact-us__title">Contact Us</h2>
+                        <span class="contact-us__subtitle">Connect with Us: Let's Discuss Your Digital Marketing Needs</span>
+                    </div>
+                    <div class="contact-us__content">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-us__form">
+                            <input type="hidden" name="access_key" value="cf7316c7-1686-4225-9c33-4ecc00c481d2">
+                            <fieldset class="contact-us__request-types radios">
+                                <legend class="radios__title visually-hidden">Request type</legend>
+                                <label class="radio__input">
+                                    <input 
+                                        class="radio__input visually-hidden" 
+                                        name="request-type" 
+                                        type="radio"
+                                        value="Say Hi"
+                                        checked
+                                    />
+                                    <span class="radio__emulator"></span>
+                                    <span class="radio__lable">Say Hi</span>
+                                </label>
+                                <label class="radio__input">
+                                    <input 
+                                        class="radio__input visually-hidden" 
+                                        name="request-type" 
+                                        type="radio"
+                                        value="Get a Quote"
+                                    />
+                                    <span class="radio__emulator"></span>
+                                    <span class="radio__lable">Get a Quote</span>
+                                </label>
+                            </fieldset>
+                            <div class="contact-us__body">
+                                <div class="contact-us__field field">
+                                    <label for="name" class="field__lable">Name</label>
+                                    <input 
+                                        class="field__input"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Name"
+                                    >
+                                </div>
+                                <div class="contact-us__field field">
+                                    <label for="email" class="field__lable">Email*</label>
+                                    <input 
+                                        class="field__input"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        required
+                                    >
+                                </div>
+                                <div class="contact-us__field field">
+                                    <label for="message" class="field__lable">Message*</label>
+                                    <textarea 
+                                        class="field__input field__input-textarea"
+                                        id="message"
+                                        name="message"
+                                        placeholder="Message"
+                                        required
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <button class="contact-us__button" type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="social">
+        <div class="container">
+            <address class="socials" aria-label="social icons">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instogram">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://x.com/" target="_blank" aria-label="Twitter">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#twitter-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://ua.linkedin.com/" target="_blank" aria-label="Linkedin">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+            </address>
+            <p class="copyright">&copy; 2025 Dushyn Roman IPZ-2.01</p>
+        </div>
+    </footer>
+
+    <script src="./js/switch.js"></script>
+</body>
+</html>

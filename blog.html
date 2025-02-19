@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Basic SEO Meta Tags -->
+    <meta name="author" content="Roman Dushyn" />
+    <meta name="description" content="Personal portfolio of Roman Dushyn, showcasing projects, blog posts, and contact details." />
+    <meta name="keywords" content="portfolio, web development, UX/UI design, projects, Roman Dushyn" />
+    
+    <!-- Adaptability  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png">
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="switch-style" aria-label="light switch">
+        <span class="button">
+            <svg class="switch-icon" aria-label="light switch button">
+                <use href="assets/sprites.svg#switch-icon"></use>
+            </svg>
+        </span>
+    </div>
+
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="logo website">
+                        <svg>
+                            <use href="assets/sprites.svg#logo-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <nav class="header__nav" aria-label="navigation">
+                    <ul class="header__nav-list" aria-label="navigation__list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="blog.html" class="header__nav-link nav-link-active">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html" class="header__nav-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="menu-toggler-id" aria-label="open-colse mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" name="toggler" id="menu-toggler-id" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+            <ul class="mobile-navigation__list" aria-label="mobile navigation list">
+                <li class="mobile-navigation__item">
+                    <a href="index.html" class="mobile-navigation__link">
+                        Projects
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="blog.html" class="mobile-navigation__link nav-link-active">
+                        Blog
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="contact.html" class="mobile-navigation__link">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+
+            <label for="menu-toggler-id" class="mobile-navigation__close"
+                aria-label="close-colse mobile navigation menu">
+                <svg class="mobile-navigation__cross" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+    <main>
+        <section class="blog" aria-label="blog section">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <h2 class="blog__title">Blog</h2>
+                    <div class="accordion__item">
+                        <button class="accordion__header">Designing Dashboards</button>
+                        <div class="accordion__container">
+                            <div class="accordion__content-image">
+                                <img src="./assets/webp/blog1.webp" alt="blog image first">
+                            </div>
+                            <div class="accordion__content">
+                                <div class="accordion-meta">
+                                    <time datetime="2025-02-12">12 Feb 2025</time>
+                                    <span class="separator">|</span>
+                                    <span class="text-muted">Express, Handlebars</span>
+                                </div>
+                                <p class="accordion__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">Vibrant Portraits of 2025</button>
+                        <div class="accordion__container">
+                            <div class="accordion__content-image">
+                                <img src="./assets/webp/blog2.webp" alt="blog image first">
+                            </div>
+                            <div class="accordion__content">
+                                <div class="accordion-meta">
+                                    <time datetime="2025-02-12">12 Feb 2025</time>
+                                    <span class="separator">|</span>
+                                    <span class="text-muted">Express, Handlebars</span>
+                                </div>
+                                <p class="accordion__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">36 Days of Malayalam type</button>
+                        <div class="accordion__container">
+                            <div class="accordion__content-image">
+                                <img src="./assets/webp/blog3.webp" alt="blog image first">
+                            </div>
+                            <div class="accordion__content">
+                                <div class="accordion-meta">
+                                    <time datetime="2025-02-12">12 Feb 2025</time>
+                                    <span class="separator">|</span>
+                                    <span class="text-muted">Express, Handlebars</span>
+                                </div>
+                                <p class="accordion__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">Components</button>
+                        <div class="accordion__container">
+                            <div class="accordion__content-image">
+                                <img src="./assets/webp/blog4.webp" alt="blog image first">
+                            </div>
+                            <div class="accordion__content">
+                                <div class="accordion-meta">
+                                    <time datetime="2025-02-12">12 Feb 2025</time>
+                                    <span class="separator">|</span>
+                                    <span class="text-muted">Express, Handlebars</span>
+                                </div>
+                                <p class="accordion__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="social">
+        <div class="container">
+            <address class="socials" aria-label="social icons">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instogram">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://x.com/" target="_blank" aria-label="Twitter">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#twitter-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://ua.linkedin.com/" target="_blank" aria-label="Linkedin">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+            </address>
+            <p class="copyright">&copy; 2025 Dushyn Roman IPZ-2.01</p>
+        </div>
+    </footer>
+
+    <script src="./js/switch.js"></script>
+    <script src="./js/accordion.js"></script>
+</body>
+</html>

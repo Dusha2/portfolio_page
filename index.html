@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Basic SEO Meta Tags -->
+    <meta name="author" content="Roman Dushyn" />
+    <meta name="description" content="Personal portfolio of Roman Dushyn, showcasing projects, blog posts, and contact details." />
+    <meta name="keywords" content="portfolio, web development, UX/UI design, projects, Roman Dushyn" />
+
+    <!-- Adaptability  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="switch-style" aria-label="light switch">
+        <span class="button">
+            <svg class="switch-icon" aria-label="light switch button">
+                <use href="assets/sprites.svg#switch-icon"></use>
+            </svg>
+        </span>
+    </div>
+
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="logo website">
+                        <svg>
+                            <use href="assets/sprites.svg#logo-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <nav class="header__nav" aria-label="navigation">
+                    <ul class="header__nav-list" aria-label="navigation__list">
+                        <li class="header__nav-item">
+                            <a href="#project" class="header__nav-link nav-link-active">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="blog.html" class="header__nav-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html" class="header__nav-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="menu-toggler-id" aria-label="open-colse mobile navigation menu">
+            <svg class="mobile-navigation__burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" name="toggler" id="menu-toggler-id" class="mobile-navigation__toggler">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+            <ul class="mobile-navigation__list" aria-label="mobile navigation list">
+                <li class="mobile-navigation__item">
+                    <a href="index.html" class="mobile-navigation__link nav-link-active">
+                        Projects
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="blog.html" class="mobile-navigation__link">
+                        Blog
+                    </a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a href="contact.html" class="mobile-navigation__link">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+
+            <label for="menu-toggler-id" class="mobile-navigation__close"
+                aria-label="close-colse mobile navigation menu">
+                <svg class="mobile-navigation__cross" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero" aria-label="hero section">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Hi, I am Dusha, <br> Creative Technologist</h1>
+                        <p class="hero__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                            nostrud amet.</p>
+                        <button type="button" class="hero__btn" onclick="downloadFile()">Download CV</button>
+                    </div>
+
+                    <div class="hero__preview">
+                        <img src="./assets/webp/preview.webp" alt="preview" class="hero__preview-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recent-posts" aria-label="recent posts">
+            <div class="container">
+                <h2 class="recent-posts__title">Recent posts</h2>
+                <div class="recent-posts__wrapper">
+                    <div class="post">
+                        <h3 class="post__title">Making a design system from scratch</h3>
+                        <div class="post-meta">
+                            <time datetime="2025-02-12">12 Feb 2025</time>
+                            <span class="separator">|</span>
+                            <span>Design, Pattern</span>
+                        </div>
+                        <p class="post__description">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="post">
+                        <h3 class="post__title">Creating pixel perfect icons in Figma</h3>
+                        <div class="post-meta">
+                            <time datetime="2025-02-12">12 Feb 2025</time>
+                            <span class="separator">|</span>
+                            <span>Figma, Icon Design</span>
+                        </div>
+                        <p class="post__description">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project" aria-label="project" id="project">
+            <h2 class="project__title">
+                Projects
+            </h2>
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide" aria-label="first card">
+                            <img src="./assets/webp/card1.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Gaming portal</h3>
+                        </div>
+                        <div class="card-item swiper-slide" aria-label="second card">
+                            <img src="./assets/webp/card2.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Video service</h3>
+                        </div>
+                        <div class="card-item swiper-slide" aria-label="third card">
+                            <img src="./assets/webp/card3.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Video portal</h3>
+                        </div>
+                        <div class="card-item swiper-slide" aria-label="fourth card">
+                            <img src="./assets/webp/card4.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Dating app</h3>
+                        </div>
+                        <div class="card-item swiper-slide" aria-label="fifth card">
+                            <img src="./assets/webp/card5.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Landing</h3>
+                        </div>
+                        <div class="card-item swiper-slide" aria-label="sixth card">
+                            <img src="./assets/webp/card6.webp" alt="card image" class="card__image">
+                            <h3 class="card__subtitle">Gaming community</h3>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="social">
+        <div class="container">
+            <address class="socials" aria-label="social icons">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instogram">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://x.com/" target="_blank" aria-label="Twitter">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#twitter-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://ua.linkedin.com/" target="_blank" aria-label="Linkedin">
+                    <svg class="social-icon">
+                        <use href="assets/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+            </address>
+            <p class="copyright">&copy; 2025 Dushyn Roman IPZ-2.01</p>
+        </div>
+    </footer>
+
+    <!-- SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/switch.js"></script>
+    <script src="./js/swiper_slide.js"></script>
+    <script src="./js/download_btn.js"></script>
+
+</body>
+</html>

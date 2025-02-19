@@ -1,0 +1,25 @@
+:root {
+    --co-black: #171718;
+    --co-black-bg: #171718;
+    --co-white: #fff;
+    --co-white-text: #fff;
+    --co-white-bg: #fff;
+    --co-red: #EB0000;
+    --co-dark-blue: #21243D;
+    --co-dark-blue-text: #21243D;
+    --co-light-blue: #cfbaff;
+    --co-violet: #5C62EC;
+    --co-violet-bg: #5560FC;
+}
+
+
+.darkstyle {
+    --co-black: #fff;
+    --co-black-bg: #523aa7;
+    --co-white-bg: #171718;
+    --co-white-text: #171718;
+    --co-red: #5C62EC;
+    --co-dark-blue-text: #fff;
+    --co-light-blue: #5C60FF;
+    --co-violet-bg: #ffffff;
+}
